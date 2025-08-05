@@ -8,6 +8,14 @@ Figure 1 traces a four-part workflow.
 3. **Spatiotemporal equity mapping** uses Local Moran’s $I$ to track year-over-year change, delineating high–high and low–low clusters and benchmarking pre-pandemic, pandemic and recovery phases.
 4. **Explainable machine-learning models** — Random Forest, LightGBM, XGBoost, CatBoost and TabPFN — predict accessibility from the 78 contextual variables; TreeSHAP diagnostics then expose global importance and directional effects, visualised with violin-dot and ranked-bar plots.
 
+
+## Data Collection and Organisation
+
+We use the **Advan Monthly Patterns** dataset, which provides visitor and demographic aggregations for points of interest (POIs) across the U.S. on a monthly basis.  
+For this project, we filter the data to include only **Georgia** and retain key columns relevant to mobility analysis ([source](10.82551/beb1-2831)).
+
+Neighbourhood-level socio-demographic features were sourced from the **American Community Survey (ACS)** for each year from 2019 to 2023 ([source](http://api.census.gov/data/2022/acs/acs5)).
+
 ---
 
 ## Enhanced Visitation-Weighted Gravity Accessibility

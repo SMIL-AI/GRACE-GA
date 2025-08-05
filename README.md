@@ -1,6 +1,8 @@
 # Understanding Service Accessibility in Georgia through Mobile Mobility Patterns
 
 Figure 1 traces a four-part workflow.  
+<img width="2447" height="1324" alt="Fig1" src="[https://github.com/SMIL-AI/GRACE-GA/blob/main/pics/Fig1.png]" />
+
 [Issue Link](https://github.com/SMIL-AI/GRACE-GA/issues/1#issue-3294442041)  
 
 1. **Data collection and organisation** fuse monthly mobility traces from Dewey Patterns with ACS socio-demographics and NAICS facility categories, producing a longitudinal panel of 72 attributes for each census block group.  

@@ -1,6 +1,6 @@
 # Understanding Service Accessibility in Georgia through Mobile Mobility Patterns
 
-Figure 1 traces a four-part workflow.  
+Our framework is shown in the figure below.  
 ![screenshot](https://github.com/SMIL-AI/GRACE-GA/blob/main/pics/Fig1.png)
 
 1. **Data collection and organisation** fuse monthly mobility traces from Dewey Patterns with ACS socio-demographics and NAICS facility categories, producing a longitudinal panel of 72 attributes for each census block group.  
@@ -19,8 +19,8 @@ Neighbourhood-level socio-demographic features were sourced from the **American 
 ---
 
 ## 2.Enhanced Visitation-Weighted Gravity Accessibility
-[Issue Link](https://github.com/SMIL-AI/GRACE-GA/issues/2#issue-3294465796) 
-As illustrated in Figure 2, our framework extends the classical gravity model by injecting device-observed mobility into every stage of the calculation. Rather than relying on assumed trip counts or ad-hoc attraction coefficients, we begin with anonymised visit records that reveal how each census block group (CBG) actually connects to every point of interest (POI).  
+![screenshot](https://github.com/SMIL-AI/GRACE-GA/blob/main/pics/Fig2.png)
+As illustrated in the figure above, our framework extends the classical gravity model by injecting device-observed mobility into every stage of the calculation. Rather than relying on assumed trip counts or ad-hoc attraction coefficients, we begin with anonymised visit records that reveal how each census block group (CBG) actually connects to every point of interest (POI).  
 
 As shown in Figure 2, the visit-share matrix records three attributes for every CBG–POI pair:  
 - **L** — the origin-to-destination distance  

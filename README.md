@@ -9,7 +9,7 @@ Figure 1 traces a four-part workflow.
 4. **Explainable machine-learning models** — Random Forest, LightGBM, XGBoost, CatBoost and TabPFN — predict accessibility from the 78 contextual variables; TreeSHAP diagnostics then expose global importance and directional effects, visualised with violin-dot and ranked-bar plots.
 
 
-## Data Collection and Organisation
+## 1.Data Collection and Organisation
 
 We use the **Advan Monthly Patterns** dataset, which provides visitor and demographic aggregations for points of interest (POIs) across the U.S. on a monthly basis.  
 For this project, we filter the data to include only **Georgia** and retain key columns relevant to mobility analysis ([source](10.82551/beb1-2831)).
@@ -18,7 +18,7 @@ Neighbourhood-level socio-demographic features were sourced from the **American 
 
 ---
 
-## Enhanced Visitation-Weighted Gravity Accessibility
+## 2.Enhanced Visitation-Weighted Gravity Accessibility
 [Issue Link](https://github.com/SMIL-AI/GRACE-GA/issues/2#issue-3294465796) 
 As illustrated in Figure 2, our framework extends the classical gravity model by injecting device-observed mobility into every stage of the calculation. Rather than relying on assumed trip counts or ad-hoc attraction coefficients, we begin with anonymised visit records that reveal how each census block group (CBG) actually connects to every point of interest (POI).  
 
@@ -33,14 +33,14 @@ Since these weights are empirical, the model naturally accounts for competition:
 
 ---
 
-## Spatiotemporal equity mapping
+## 3.Spatiotemporal equity mapping
 [Issue Link](https://github.com/SMIL-AI/GRACE-GA/issues/3#issue-3294487785)
 
 Local Moran’s \(I\) exposes where gains in accessibility have been spatially uneven. Figure 3 and 4 are relatively clusters and outliers for overall accessibility and food accessibility of 2019 and 2023.
 
 ---
 
-## Model Training and Interpretation
+## 4.Model Training and Interpretation
 
 We modeled CBG-level accessibility across three pandemic phases using four tree-ensemble regressors: Random Forest, LightGBM, XGBoost, and CatBoost.  
 All models used the same 72 socio-demographic and transport features, with median-imputation for missing values and label encoding where needed.

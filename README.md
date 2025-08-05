@@ -1,7 +1,7 @@
 # Understanding Service Accessibility in Georgia through Mobile Mobility Patterns
 
 Figure 1 traces a four-part workflow.  
-<img width="2447" height="1324" alt="Fig1" src="[https://github.com/SMIL-AI/GRACE-GA/blob/main/pics/Fig1.png]" />
+![screenshot](https://github.com/SMIL-AI/GRACE-GA/blob/main/pics/Fig1.png)
 
 [Issue Link](https://github.com/SMIL-AI/GRACE-GA/issues/1#issue-3294442041)  
 

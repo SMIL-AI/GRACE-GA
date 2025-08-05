@@ -1,6 +1,7 @@
 # Understanding Service Accessibility in Georgia through Mobile Mobility Patterns
 
-Our framework is shown in the figure below.  
+This study introduces a visitation-weighted gravity metric that combines mobile point-of-interest data with distance-decay theory to assess accessibility to healthcare, food, education, and recreation in Georgia from 2019 to 2023. Our framework is shown in the figure below. 
+
 ![screenshot](https://github.com/SMIL-AI/GRACE-GA/blob/main/pics/Fig1.png)
 
 1. **Data collection and organisation** fuse monthly mobility traces from Dewey Patterns with ACS socio-demographics and NAICS facility categories, producing a longitudinal panel of 72 attributes for each census block group.  

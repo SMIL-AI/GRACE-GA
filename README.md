@@ -5,11 +5,11 @@ Our framework is shown in the figure below.
 
 1. **Data collection and organisation** fuse monthly mobility traces from Dewey Patterns with ACS socio-demographics and NAICS facility categories, producing a longitudinal panel of 72 attributes for each census block group.  
 2. **Enhanced visitation-weighted gravity model** combines empirical CBG-to-POI trip shares, Gaussian distance decay and facility capacity to produce annual accessibility surfaces for the state and for four service domains — healthcare, food, education and recreation.
-3. **Spatiotemporal equity mapping** uses Local Moran’s $I$ to track year-over-year change, delineating high–high and low–low clusters and benchmarking pre-pandemic, pandemic and recovery phases.
+3. **Spatiotemporal accessibility mapping** uses Local Moran’s $I$ to track year-over-year change, delineating high–high and low–low clusters and benchmarking pre-pandemic, pandemic and recovery phases.
 4. **Explainable machine-learning models** — Random Forest, LightGBM, XGBoost, CatBoost and TabPFN — predict accessibility from the 78 contextual variables; TreeSHAP diagnostics then expose global importance and directional effects, visualised with violin-dot and ranked-bar plots.
 
 
-## 1.Data Collection and Organisation
+## 1.Data Collection and Organization
 
 We use the **Advan Monthly Patterns** dataset, which provides visitor and demographic aggregations for points of interest (POIs) across the U.S. on a monthly basis.  
 For this project, we filter the data to include only **Georgia** and retain key columns relevant to mobility analysis ([source](10.82551/beb1-2831)).

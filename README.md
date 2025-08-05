@@ -26,3 +26,18 @@ Since these weights are empirical, the model naturally accounts for competition:
 ---
 
 ## Spatiotemporal equity mapping
+https://github.com/SMIL-AI/GRACE-GA/issues/3#issue-3294487785
+
+Local Moran’s \(I\) exposes where gains in accessibility have been spatially uneven. Figure 3 and 4 are relatively clusters and outliers for overall accessibility and food accessibility of 2019 and 2023.
+
+---
+
+## Model Training and Interpretation
+
+We modeled CBG-level accessibility across three pandemic phases using four tree-ensemble regressors: Random Forest, LightGBM, XGBoost, and CatBoost.  
+All models used the same 72 socio-demographic and transport features, with median-imputation for missing values and label encoding where needed.
+
+The best configuration (highest mean cross-validated R²) for each model was retrained on the full dataset and saved for SHAP-based interpretation.  
+A second 5-fold cross-validation produced out-of-fold predictions to compute **R²**, **MSE**, and **MAE**.
+
+For interpretation, we applied **SHAP (TreeSHAP)**, which assigns each feature a Shapley value indicating its contribution to a prediction. This ensures local accuracy by decomposing each prediction into the sum of feature contributions plus a baseline.

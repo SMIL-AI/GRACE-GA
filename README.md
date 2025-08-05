@@ -3,8 +3,6 @@
 Figure 1 traces a four-part workflow.  
 ![screenshot](https://github.com/SMIL-AI/GRACE-GA/blob/main/pics/Fig1.png)
 
-[Issue Link](https://github.com/SMIL-AI/GRACE-GA/issues/1#issue-3294442041)  
-
 1. **Data collection and organisation** fuse monthly mobility traces from Dewey Patterns with ACS socio-demographics and NAICS facility categories, producing a longitudinal panel of 72 attributes for each census block group.  
 2. **Enhanced visitation-weighted gravity model** combines empirical CBG-to-POI trip shares, Gaussian distance decay and facility capacity to produce annual accessibility surfaces for the state and for four service domains — healthcare, food, education and recreation.
 3. **Spatiotemporal equity mapping** uses Local Moran’s $I$ to track year-over-year change, delineating high–high and low–low clusters and benchmarking pre-pandemic, pandemic and recovery phases.

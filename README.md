@@ -33,10 +33,10 @@ Since these weights are empirical, the model naturally accounts for competition:
 
 ---
 
-## 3.Spatiotemporal equity mapping
+## 3.Spatial accessibility patterns
 ![screenshot](https://github.com/SMIL-AI/GRACE-GA/blob/main/pics/Fig3.png)
 
-Local Moran’s \(I\) exposes where gains in accessibility have been spatially uneven. Figure 3 and 4 are relatively clusters and outliers for overall accessibility and food accessibility of 2019 and 2023.
+Local Moran’s \(I\) exposes where gains in accessibility have been spatially uneven. Figures above show relatively clusters and outliers for overall accessibility and food accessibility of 2019 and 2023.
 
 ---
 

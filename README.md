@@ -1,16 +1,17 @@
 # Understanding Service Accessibility in Georgia through Mobile Mobility Patterns
 
-Figure 1 traces a three-part workflow.  
+Figure 1 traces a four-part workflow.  
 [Issue Link](https://github.com/SMIL-AI/GRACE-GA/issues/1#issue-3294442041)  
 
 1. **Data collection and organisation** fuse monthly mobility traces from Dewey Patterns with ACS socio-demographics and NAICS facility categories, producing a longitudinal panel of 72 attributes for each census block group.  
-2. **Enhanced visitation-weighted gravity model** combines empirical CBG-to-POI trip shares, Gaussian distance decay and facility capacity to produce annual accessibility surfaces for the state and for four service domains — healthcare, food, education and recreation.  
-3. **Explainable machine-learning models** — Random Forest, LightGBM, XGBoost, CatBoost and TabPFN — predict accessibility from the 78 contextual variables; TreeSHAP diagnostics then expose global importance and directional effects, visualised with violin-dot and ranked-bar plots.
+2. **Enhanced visitation-weighted gravity model** combines empirical CBG-to-POI trip shares, Gaussian distance decay and facility capacity to produce annual accessibility surfaces for the state and for four service domains — healthcare, food, education and recreation.
+3. **Spatiotemporal equity mapping** uses Local Moran’s $I$ to track year-over-year change, delineating high–high and low–low clusters and benchmarking pre-pandemic, pandemic and recovery phases.
+4. **Explainable machine-learning models** — Random Forest, LightGBM, XGBoost, CatBoost and TabPFN — predict accessibility from the 78 contextual variables; TreeSHAP diagnostics then expose global importance and directional effects, visualised with violin-dot and ranked-bar plots.
 
 ---
 
 ## Enhanced Visitation-Weighted Gravity Accessibility
-
+[Issue Link](https://github.com/SMIL-AI/GRACE-GA/issues/2#issue-3294465796) 
 As illustrated in Figure 2, our framework extends the classical gravity model by injecting device-observed mobility into every stage of the calculation. Rather than relying on assumed trip counts or ad-hoc attraction coefficients, we begin with anonymised visit records that reveal how each census block group (CBG) actually connects to every point of interest (POI).  
 
 As shown in Figure 2, the visit-share matrix records three attributes for every CBG–POI pair:  
@@ -21,3 +22,7 @@ As shown in Figure 2, the visit-share matrix records three attributes for every 
 Since these weights are empirical, the model naturally accounts for competition: popular facilities receive larger demand weights, while under-visited sites stand out as potential service gaps. Multiplying this demand surface by each facility’s supply capacity (**S**) and the Gaussian distance-decay kernel yields a competition-aware accessibility score:  
 
 **Aᵥ = S × D × L**
+
+---
+
+## Spatiotemporal equity mapping

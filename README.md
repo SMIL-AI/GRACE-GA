@@ -50,3 +50,7 @@ The best configuration (highest mean cross-validated R²) for each model was ret
 A second 5-fold cross-validation produced out-of-fold predictions to compute **R²**, **MSE**, and **MAE**.
 
 For interpretation, we applied **SHAP (TreeSHAP)**, which assigns each feature a Shapley value indicating its contribution to a prediction. This ensures local accuracy by decomposing each prediction into the sum of feature contributions plus a baseline.
+
+
+
+

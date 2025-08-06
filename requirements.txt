@@ -1,0 +1,31 @@
+# Core scientific stack
+numpy
+pandas
+scikit-learn
+scipy
+
+# Geospatial
+geopandas
+shapely
+fiona
+pyproj
+rtree
+
+# Visualization
+matplotlib
+seaborn
+shap  # for SHAP explainability plots
+
+# Machine Learning models
+xgboost
+lightgbm
+catboost
+tabpfn
+
+# Utilities
+joblib
+tqdm
+
+# Optional but recommended for large CSV/Geo data handling
+pyarrow
+fastparquet
